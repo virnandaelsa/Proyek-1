@@ -32,7 +32,7 @@
               <div class="card-header">
             <!-- Button Tambah -->
              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalTambah">
-                <i class="fas fa-file"></i>  Tambah Data
+                <i class="fas fa-file"></i>  Tambah Data Pengguna
             </button>
             <!-- End Button Tambah -->
                 <!-- Modal Tambah -->
