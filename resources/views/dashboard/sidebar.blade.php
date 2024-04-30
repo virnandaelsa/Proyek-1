@@ -5,7 +5,7 @@
         <img src="{{ asset('assets/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">Alexander Pierce</a>
+        <a href="#" class="d-block">Admin</a>
       </div>
     </div>
 
@@ -42,7 +42,7 @@
               </a>
             </li> -->
             <li class="nav-item">
-              <a href="{{ route('crud') }}" class="nav-link {{ Request::is('*crud') ? 'active' : ''  }}">
+              <a href="{{ route('data_makanan') }}" class="nav-link {{ Request::is('*data_makanan') ? 'active' : ''  }}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Makanan</p>
               </a>

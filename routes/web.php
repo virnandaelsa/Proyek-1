@@ -30,7 +30,7 @@ Route::get('/register', [AuthController::class, 'register'])->name('register');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-Route::get('/dashboard/crud', [CrudController::class, 'index'])->name('crud');
+Route::get('/dashboard/data_makanan', [CrudController::class, 'index'])->name('data_makanan');
 Route::post('/dashboard/crud/store', [CrudController::class, 'store'])->name('crud_tambah');
 Route::post('/dashboard/crud/{id}/update', [CrudController::class, 'update']);
 Route::delete('/dashboard/crud/{id}/destroy', [CrudController::class, 'destroy']);

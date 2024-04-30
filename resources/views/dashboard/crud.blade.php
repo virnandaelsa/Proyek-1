@@ -8,12 +8,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>DataTables</h1>
+            <h1>Data Makanan</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">DataTables</li>
+              <!-- <li class="breadcrumb-item active">DataTables</li> -->
             </ol>
           </div>
         </div>
@@ -32,7 +32,7 @@
               <div class="card-header">
             <!-- Button Tambah -->
              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalTambah">
-                <i class="fas fa-file"></i>  Tambah Data Pengguna
+                <i class="fas fa-file"></i>  Tambah Data Makanan
             </button>
             <!-- End Button Tambah -->
                 <!-- Modal Tambah -->
@@ -49,12 +49,26 @@
                         </div>
                         <div class="modal-body">
                             <div class="form-group">
-                                <label for="nama">Nama</label>
+                                <label for="nama">Nama Makanan</label>
                                 <input type="text" class="form-control rounded-0 @error('nama') is-invalid @enderror" id="nama" name="nama" value="" placeholder="Nama....">
                             </div>
                             <div class="form-group">
-                                <label for="nama">Alamat</label>
-                                <input type="text" class="form-control rounded-0 @error('alamat') is-invalid @enderror" id="alamat" name="alamat" value="" placeholder="Alamat...">
+                                <label for="kategori">Kategori</label>
+                                <select class="form-control rounded-0" id="kategori" name="kategori">
+                                    <option value="">Pilih Kategori</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="nama">Protein</label>
+                                <input type="text" class="form-control rounded-0 @error('alamat') is-invalid @enderror" id="alamat" name="alamat" value="" placeholder="Protein...">
+                            </div>
+                            <div class="form-group">
+                                <label for="nama">Karbohidrat</label>
+                                <input type="text" class="form-control rounded-0 @error('alamat') is-invalid @enderror" id="alamat" name="alamat" value="" placeholder="Karbohidrat...">
+                            </div>
+                            <div class="form-group">
+                                <label for="nama">Lemak</label>
+                                <input type="text" class="form-control rounded-0 @error('alamat') is-invalid @enderror" id="alamat" name="alamat" value="" placeholder="Lemak...">
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -75,8 +89,11 @@
                   <thead>
                   <tr class="text-center">
                     <th>No</th>
-                    <th>Nama</th>
-                    <th>Alamat</th>
+                    <th>Nama Makanan</th>
+                    <th>Kategori</th>
+                    <th>Protein</th>
+                    <th>Karbohidrat</th>
+                    <th>Lemak</th>
                     <th>Aksi</th>
                   </tr>
                   </thead>
@@ -162,14 +179,14 @@
                        </tr>          
                       @endforeach                   
                   </tbody>
-                  <tfoot>
+                  <!-- <tfoot>
                   <tr class="text-center"> 
                     <th>No</th>
                     <th>Nama</th>
                     <th>Alamat</th>
                     <th>Aksi</th>
                   </tr>
-                  </tfoot>
+                  </tfoot> -->
                 </table>
               </div>
               <!-- /.card-body -->
